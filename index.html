@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"
-    <a href="#">Project 2</a>
-    <title> counting</title>
-    <style>
-      h2 {text-align: center;
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Counting</title>
+   <style>
+      h2 {
+         text-align: center;
+      }
+      .btn-container {
+         text-align: center;
       }
       button {
-            width: 100px;
-            height: 50px;}
-    </style>
+         width: 100px;
+         height: 50px;
+         margin: 5px;
+      }
+   </style>
 </head>
+
 <body>
+
+<a href="#">Project 2</a>
+
 <h2 id="count">0</h2>
-<center>
-<button  onclick="increase()">+</button>
-<button  onclick="decrease()">-</button>
-</center>
+
+<div class="btn-container">
+   <button onclick="increase()">+</button>
+   <button onclick="decrease()">-</button>
+</div>
+
 <script>
 let count = 0;
 
@@ -31,5 +42,6 @@ function decrease() {
     document.getElementById("count").innerHTML = count;
 }
 </script>
+
 </body>
 </html>
